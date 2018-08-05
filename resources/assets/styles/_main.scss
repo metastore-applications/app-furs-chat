@@ -1,0 +1,177 @@
+html,
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+html {
+	background: #f0efe8 url('../images/pattern.paw.png') repeat fixed;
+}
+
+pre,
+code {
+	font-family: 'Fira Mono', monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+}
+
+.navbar {
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	&.has-shadow {
+		box-shadow: 0 2px 3px 0 rgba(10, 10, 10, .1);
+	}
+}
+
+.footer {
+	&.has-shadow {
+		box-shadow: 0 -2px 3px 0 rgba(10, 10, 10, .1);
+	}
+}
+
+.media {
+	.media-left {
+		.fas {
+			$size: 2rem;
+			text-align: center;
+			font-size: $size;
+			color: #fff;
+			width: ($size * 2);
+			height: ($size * 2);
+			border-radius: 50%;
+			line-height: ($size * 2);
+			background-color: hsl(217, 71%, 53%);
+		}
+	}
+}
+
+.stats-roles {
+	&-list {
+		border: 1px solid hsl(0, 0%, 86%);
+		box-shadow: inset 0 1px 2px rgba(10, 10, 10, .1);
+		padding: 1rem;
+		max-height: 40rem;
+		overflow: auto;
+		.level {
+			border-bottom: 1px solid hsl(0, 0%, 96%);
+			padding-bottom: 1.5rem;
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+}
+
+#chatChannelList,
+#chatUserList,
+#chatMessageList {
+	margin-left: 0 !important;
+	list-style: none;
+	border: 1px solid hsl(0, 0%, 86%);
+	box-shadow: inset 0 1px 2px rgba(10, 10, 10, .1);
+	height: 20rem;
+	overflow: auto;
+	li {
+		line-height: 1;
+		padding: .5rem 1rem;
+		overflow: hidden;
+		&:nth-of-type(2n+1) {
+			background-color: hsl(0, 0%, 98%);
+		}
+	}
+}
+
+#chatMessageList,
+#chatUserList {
+	height: 40rem;
+}
+
+#chatUserList,
+#chatMessageList {
+	li {
+		overflow: hidden;
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+		.userData {
+			overflow: hidden;
+		}
+		.userImg {
+			$size: 2.5rem;
+			float: left;
+			height: $size;
+			width: $size;
+			margin-right: 1rem;
+			img {
+				border-radius: 50%;
+			}
+		}
+		.userName {
+			span {
+				display: block;
+				&:nth-child(2) {
+					color: #777;
+					font-size: .8rem;
+					margin-top: .4rem;
+				}
+			}
+		}
+		.userBot {
+			float: right;
+			text-transform: uppercase;
+			margin-left: 1rem;
+		}
+		.userStatus {
+			$size: .8em;
+			float: right;
+			width: $size;
+			height: $size;
+			border-radius: 100%;
+			margin-right: 1rem;
+			&.online {
+				background-color: #43b581;
+			}
+			&.idle {
+				background-color: #faa61a;
+			}
+			&.dnd {
+				background-color: #f04747;
+			}
+		}
+		.userContent {
+			overflow: hidden;
+			line-height: 1.5;
+		}
+		.userAttachment {
+			margin-top: .5rem;
+		}
+	}
+}
+
+#chatMessageList {
+	.userMention {
+		color: hsl(217, 71%, 53%);
+	}
+	.userEveryone {
+		background-color: hsl(48, 100%, 67%) !important;
+	}
+}
+
+#scrollToTop {
+	display: none;
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	a {
+		display: block;
+	}
+}
