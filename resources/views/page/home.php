@@ -130,7 +130,8 @@
 											Стримы
 										</h4>
 										<p>
-											На нашем канале <a href="https://furs.stream/"><strong>FURS.Stream</strong></a> проводится потоковое вещание <strong>радио-передач</strong> и <strong>Let's Play</strong>-ев.
+											На нашем канале <a href="https://furs.stream/"><strong>FURS.Stream</strong></a> проводится потоковое вещание
+											<strong>радио-передач</strong> и <strong>Let's Play</strong>-ев.
 										</p>
 									</div>
 								</div>
@@ -153,9 +154,11 @@
 											Интеграция с ресурсами FURS
 										</h4>
 										<p>
-											Наш сервер интегрирован с библиотекой <a href="https://library.furs.wiki/"><strong>FURS / LIBRARY</strong></a>,
+											Наш сервер интегрирован с библиотекой
+											<a href="https://library.furs.wiki/"><strong>FURS / LIBRARY</strong></a>,
 											а также остальными ресурсами сети <strong>FURS</strong>.
-											Все изменения автоматически публикуются в специальном канале <strong>FURS.Chat</strong>'а,
+											Все изменения автоматически публикуются в специальном канале
+											<strong>FURS.Chat</strong>'а,
 											поэтому Вы не пропустите ни одного события.
 										</p>
 									</div>
@@ -201,7 +204,8 @@
 											Новые технологии и возможности
 										</h4>
 										<p>
-											Сервер <strong>FURS.Chat</strong> постоянно обновляется и внедряет новые возможности.
+											Сервер
+											<strong>FURS.Chat</strong> постоянно обновляется и внедряет новые возможности.
 											Мы первыми реализовали категории для каналов и первыми интегрировали потоки радио-вещания с серверов Discord на внешние источники.
 										</p>
 									</div>
@@ -223,7 +227,8 @@
 											Добрая администрация
 										</h4>
 										<p>
-											Администрация <strong>FURS.Chat</strong> всегда готова выслушать Вас и открыта для принятия новых идей и пожеланий.
+											Администрация
+											<strong>FURS.Chat</strong> всегда готова выслушать Вас и открыта для принятия новых идей и пожеланий.
 										</p>
 									</div>
 								</div>
@@ -366,7 +371,8 @@
 									Каналы
 								</h4>
 								<p>
-									Сервер <strong>FURS.Chat</strong> отличается от других серверов продуманной системой каналов для общения.
+									Сервер
+									<strong>FURS.Chat</strong> отличается от других серверов продуманной системой каналов для общения.
 								</p>
 								<ul>
 									<li>
@@ -376,7 +382,8 @@
 										Более <span class="tag is-link">3</span> каналов для RP-тематики.
 									</li>
 									<li>
-										Более <span class="tag is-link">6</span> каналов для общения при помощи голосовой связи.
+										Более
+										<span class="tag is-link">6</span> каналов для общения при помощи голосовой связи.
 									</li>
 								</ul>
 							</article>
@@ -429,6 +436,25 @@
 			</div>
 		</section>
 		<!-- / section-stats -->
+
+		<!-- section-ranking -->
+		<section id="section-ranking" class="hero is-fullheight">
+			<div class="hero-body">
+				<div class="container box">
+					<h1 class="title">
+						Рейтинг участников (TOP-50)
+					</h1>
+					<div class="columns">
+						<!-- block -->
+						<div class="column">
+							<?php View::get( 'list.ranking', 'block' ); ?>
+						</div>
+						<!-- / block -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- / section-ranking -->
 
 	</main>
 

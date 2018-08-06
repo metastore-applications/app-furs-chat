@@ -22,6 +22,9 @@
 			<a class="navbar-item ext-scroll" href="#section-stats" itemprop="url">
 				<span itemprop="name">Статистика</span>
 			</a>
+			<a class="navbar-item ext-scroll" href="#section-ranking" itemprop="url">
+				<span itemprop="name">Рейтинг</span>
+			</a>
 			<div class="navbar-item has-dropdown is-hoverable">
 				<a class="navbar-link">
 					Наши ресурсы

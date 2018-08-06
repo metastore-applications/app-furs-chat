@@ -172,3 +172,11 @@ h6 {
 		vertical-align: middle;
 	}
 }
+
+.stats {
+	&-ranking {
+		img {
+			border-radius: 50%;
+		}
+	}
+}

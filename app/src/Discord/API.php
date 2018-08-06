@@ -2,7 +2,7 @@
 
 namespace MetaStore\App\Furs\Discord;
 
-use MetaStore\App\Kernel\{Config, cURL, Date};
+use MetaStore\App\Kernel\{Config, cURL};
 
 /**
  * Class API
@@ -16,7 +16,7 @@ class API {
 	 *
 	 * @return bool|mixed|string
 	 */
-	public static function getAPI( $type = '', $time = 60 * 60 ) {
+	public static function getAPI( $type = '', $time = 2 * 60 * 60 ) {
 		$cfg   = Config::getFile( 'api' );
 		$token = $cfg['api']['discord']['token'];
 		$guild = $cfg['api']['discord']['guild'];

@@ -2,6 +2,7 @@
 
 namespace MetaStore\App\Furs;
 
+use MetaStore\App\Furs\JuniperBot\Cards;
 use MetaStore\App\Kernel\View;
 use MetaStore\App\Furs\Members\{Members, Roles};
 use MetaStore\App\Furs\Messages\Messages;
@@ -50,6 +51,13 @@ class App {
 	public static function getMessages() {
 		$members = new Messages();
 		$out     = $members->getMassages();
+
+		return $out;
+	}
+
+	public static function getRanking() {
+		$ranking = new Cards();
+		$out     = $ranking->getCards();
 
 		return $out;
 	}
