@@ -46,7 +46,7 @@ class Roles {
 
 			$outRoleName .= '<tr>';
 			$outRoleName .= '<td>' . $block . '<span class="role-' . Translit::get( $item ) . '">' . $item . '</span></td>';
-			$outRoleName .= '<td class="has-text-right"><span class="tag is-info">' . $value . '</span></td>';
+			$outRoleName .= '<td class="has-text-right"><span class="tag is-link">' . $value . '</span></td>';
 			$outRoleName .= '</tr>';
 		}
 
