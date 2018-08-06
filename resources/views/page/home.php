@@ -327,17 +327,17 @@
 								</h4>
 								<div class="field is-grouped">
 									<p class="control">
-										<a title="ВКонтакте" class="button is-dark" href="https://vk.com/furs.life" target="_blank">
+										<a title="ВКонтакте" class="button is-dark" href="https://vk.com/furs.life">
 											<span class="icon"><span class="fab fa-vk fa-fw"></span></span>
 										</a>
 									</p>
 									<p class="control">
-										<a title="Facebook" class="button is-dark" href="https://www.facebook.com/furs.life" target="_blank">
+										<a title="Facebook" class="button is-dark" href="https://www.facebook.com/furs.life">
 											<span class="icon"><span class="fab fa-facebook-f fa-fw"></span></span>
 										</a>
 									</p>
 									<p class="control">
-										<a title="Twitter" class="button is-dark" href="https://twitter.com/fursnetwork" target="_blank">
+										<a title="Twitter" class="button is-dark" href="https://twitter.com/fursnetwork">
 											<span class="icon"><span class="fab fa-twitter fa-fw"></span></span>
 										</a>
 									</p>

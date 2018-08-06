@@ -27,16 +27,16 @@
 					Наши ресурсы
 				</a>
 				<div class="navbar-dropdown is-boxed">
-					<a class="navbar-item" href="https://whatisfurry.pro/" target="_blank" itemprop="url">
+					<a class="navbar-item" href="https://whatisfurry.pro/" itemprop="url">
 						<span itemprop="name">О ФУРРИ</span>
 					</a>
-					<a class="navbar-item" href="https://furcode.pro/" target="_blank" itemprop="url">
+					<a class="navbar-item" href="https://furcode.pro/" itemprop="url">
 						<span itemprop="name">ФурКод</span>
 					</a>
-					<a class="navbar-item" href="https://furryradio.pro/" target="_blank" itemprop="url">
+					<a class="navbar-item" href="https://furryradio.pro/" itemprop="url">
 						<span itemprop="name">Радио</span>
 					</a>
-					<a class="navbar-item" href="https://furs.network/" target="_blank" itemprop="url">
+					<a class="navbar-item" href="https://furs.network/" itemprop="url">
 						<span itemprop="name">Сообщество</span>
 					</a>
 				</div>

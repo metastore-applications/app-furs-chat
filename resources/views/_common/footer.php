@@ -3,7 +3,7 @@
 <footer class="footer has-shadow">
 	<div class="content has-text-centered">
 		<p>
-			Платформа <a href="https://furs.network/" target="_blank"><strong>FURS</strong></a> разработана при поддержке сообщества FURRY.
+			Платформа <a href="https://furs.network/"><strong>FURS</strong></a> разработана при поддержке сообщества FURRY.
 		</p>
 		<p>
 			Спасибо вам, ребята, за поддержку!
