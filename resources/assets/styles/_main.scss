@@ -52,23 +52,6 @@ h6 {
 	}
 }
 
-.stats-roles {
-	&-list {
-		border: 1px solid hsl(0, 0%, 86%);
-		box-shadow: inset 0 1px 2px rgba(10, 10, 10, .1);
-		padding: 1rem;
-		max-height: 40rem;
-		overflow: auto;
-		.level {
-			border-bottom: 1px solid hsl(0, 0%, 96%);
-			padding-bottom: 1.5rem;
-			&:last-child {
-				border-bottom: none;
-			}
-		}
-	}
-}
-
 #chatChannelList,
 #chatUserList,
 #chatMessageList {
@@ -173,5 +156,18 @@ h6 {
 	right: 1rem;
 	a {
 		display: block;
+	}
+}
+
+.role {
+	&-color-block {
+		$size: 1rem;
+
+		display: inline-block;
+		border-radius: .2rem;
+		margin-right: $size;
+		width: $size;
+		height: $size;
+		vertical-align: middle;
 	}
 }

@@ -28,7 +28,7 @@ class Members {
 				$getUserName = Parser::clearData( $member['username'] );
 			}
 
-			$outUserIMG = '<img src="' . $getUserIMG . '" alt="' . $getUserName . '" />';
+			$outUserIMG = '<img src="' . $getUserIMG . '" alt="" />';
 
 			if ( $getUserStatus == 'online' ) {
 				$getUserStatus = 'online';

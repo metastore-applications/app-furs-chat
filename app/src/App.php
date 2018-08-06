@@ -26,9 +26,23 @@ class App {
 		return $out;
 	}
 
-	public static function getRoles() {
+	public static function getRolesFurs() {
 		$members = new Roles();
-		$out     = $members->getRoles();
+		$out     = $members->getRolesFurs();
+
+		return $out;
+	}
+
+	public static function getRolesProf() {
+		$members = new Roles();
+		$out     = $members->getRolesProf();
+
+		return $out;
+	}
+
+	public static function getRolesClr() {
+		$members = new Roles();
+		$out     = $members->getRolesClr();
 
 		return $out;
 	}
