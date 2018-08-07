@@ -28,6 +28,9 @@ class Cron {
 		JuniperBot\API::getAPI( 'ranking' );
 	}
 
+	/**
+	 * @return bool
+	 */
 	public function runCron() {
 		$cfg   = Config::getFile( 'cron' );
 		$token = $cfg['cron']['token'];
