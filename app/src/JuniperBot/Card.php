@@ -21,8 +21,8 @@ class Card {
 		$out .= '</div>';
 		$out .= '<div class="card-footer">';
 		$out .= '<div class="card-footer-item">' . API::getUserRank( $entry['rank'] ) . '</div>';
-		$out .= '<div class="card-footer-item">' . API::getUserLevel( $entry['level'] ) . '</div>';
-		$out .= '<div class="card-footer-item">' . API::getUserExp( $entry['totalExp'] ) . '</div>';
+		$out .= '<div class="card-footer-item is-hidden-touch">' . API::getUserLevel( $entry['level'] ) . '</div>';
+		$out .= '<div class="card-footer-item is-hidden-touch">' . API::getUserExp( $entry['totalExp'] ) . '</div>';
 		$out .= '</div>';
 		$out .= '</div></div>';
 
