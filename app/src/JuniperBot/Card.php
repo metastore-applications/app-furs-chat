@@ -9,6 +9,12 @@ use MetaStore\App\Kernel\Parser;
  * @package MetaStore\App\Furs\Members
  */
 class Card {
+
+	/**
+	 * @param $entry
+	 *
+	 * @return string
+	 */
 	public static function getCard( $entry ) {
 		$out = '<div class="column"><div class="card" itemscope itemtype="http://schema.org/Person">';
 		$out .= '<div class="card-content">';

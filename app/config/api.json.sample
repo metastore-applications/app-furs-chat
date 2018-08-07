@@ -1,0 +1,11 @@
+{
+	"api": {
+		"discord": {
+			"token": "",
+			"guild": ""
+		},
+		"bot.juniper": {
+			"guild": ""
+		}
+	}
+}

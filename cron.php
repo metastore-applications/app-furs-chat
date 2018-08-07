@@ -1,0 +1,48 @@
+<?php
+
+namespace MetaStore\App\Furs;
+
+use MetaStore\App\Kernel\{Config, Request};
+
+require_once( __DIR__ . '/vendor/autoload.php' );
+
+class Cron {
+
+	/**
+	 * @return string
+	 */
+	public static function getToken() {
+		$out = Request::getParam( 'token' );
+
+		return $out;
+	}
+
+	/**
+	 *
+	 */
+	public function getAPI() {
+		Discord\API::getAPI( 'guilds' );
+		Discord\API::getAPI( 'members' );
+		Discord\API::getAPI( 'messages' );
+		Discord\API::getAPI( 'widget' );
+		JuniperBot\API::getAPI( 'ranking' );
+	}
+
+	public function runCron() {
+		$cfg   = Config::getFile( 'cron' );
+		$token = $cfg['cron']['token'];
+
+		switch ( self::getToken() ) {
+			case $token:
+				self::getAPI();
+				break;
+			default:
+				return false;
+		}
+
+		return true;
+	}
+}
+
+$cron = new Cron();
+$cron->runCron();

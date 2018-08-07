@@ -7,6 +7,10 @@ namespace MetaStore\App\Furs\JuniperBot;
  * @package MetaStore\App\Furs\Members
  */
 class Cards {
+
+	/**
+	 * @return string
+	 */
 	public static function getCards() {
 		$api   = API::getAPI( 'ranking' )['content'];
 		$out   = '';

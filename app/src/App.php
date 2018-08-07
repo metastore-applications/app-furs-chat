@@ -2,10 +2,10 @@
 
 namespace MetaStore\App\Furs;
 
-use MetaStore\App\Furs\JuniperBot\Cards;
 use MetaStore\App\Kernel\View;
 use MetaStore\App\Furs\Members\{Members, Roles};
 use MetaStore\App\Furs\Messages\Messages;
+use MetaStore\App\Furs\JuniperBot\Cards;
 
 /**
  * Class App
@@ -13,6 +13,9 @@ use MetaStore\App\Furs\Messages\Messages;
  */
 class App {
 
+	/**
+	 * @return string
+	 */
 	public static function getMembers() {
 		$members = new Members();
 		$out     = $members->getMembers();
@@ -20,6 +23,9 @@ class App {
 		return $out;
 	}
 
+	/**
+	 * @return int|string
+	 */
 	public static function getMembersCount() {
 		$members = new Members();
 		$out     = $members->getMembersCount();
@@ -27,6 +33,9 @@ class App {
 		return $out;
 	}
 
+	/**
+	 * @return string
+	 */
 	public static function getRolesFurs() {
 		$members = new Roles();
 		$out     = $members->getRolesFurs();
@@ -34,6 +43,9 @@ class App {
 		return $out;
 	}
 
+	/**
+	 * @return string
+	 */
 	public static function getRolesProf() {
 		$members = new Roles();
 		$out     = $members->getRolesProf();
@@ -41,6 +53,9 @@ class App {
 		return $out;
 	}
 
+	/**
+	 * @return string
+	 */
 	public static function getRolesClr() {
 		$members = new Roles();
 		$out     = $members->getRolesClr();
@@ -48,6 +63,9 @@ class App {
 		return $out;
 	}
 
+	/**
+	 * @return string
+	 */
 	public static function getMessages() {
 		$members = new Messages();
 		$out     = $members->getMassages();
@@ -55,6 +73,9 @@ class App {
 		return $out;
 	}
 
+	/**
+	 * @return string
+	 */
 	public static function getRanking() {
 		$ranking = new Cards();
 		$out     = $ranking->getCards();
@@ -65,7 +86,7 @@ class App {
 	/**
 	 *
 	 */
-	public static function Run() {
+	public static function runApp() {
 		View::get( 'home', 'page' );
 	}
 }
