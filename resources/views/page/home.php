@@ -24,7 +24,7 @@
 						</div>
 						<!-- / block -->
 						<!-- block -->
-						<div class="column">
+						<div class="column is-4">
 							<article class="content">
 								<h4>
 									Участники
