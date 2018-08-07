@@ -41,7 +41,8 @@ class API {
 	 * @return string
 	 */
 	public static function getUserIMG( $url ) {
-		$out = '<img src="' . $url . '" alt="" itemprop="image" />';
+		$error = 'this.src=\'/resources/assets/images/logo.png\'';
+		$out   = '<img src="' . $url . '" alt="" itemprop="image" onerror="' . $error . '" />';
 
 		return $out;
 	}
