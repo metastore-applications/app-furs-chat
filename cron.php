@@ -18,7 +18,7 @@ class Cron {
 	}
 
 	/**
-	 *
+	 * @return bool
 	 */
 	public function getAPI() {
 		Discord\API::getAPI( 'guilds' );
@@ -26,6 +26,8 @@ class Cron {
 		Discord\API::getAPI( 'messages' );
 		Discord\API::getAPI( 'widget' );
 		JuniperBot\API::getAPI( 'ranking' );
+
+		return true;
 	}
 
 	/**
