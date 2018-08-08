@@ -2,7 +2,9 @@
 
 namespace MetaStore\App\Furs;
 
-use MetaStore\App\Kernel\{Config, Request};
+use MetaStore\App\Kernel\Config;
+
+define( 'ABSPATH', __DIR__ );
 
 require_once( __DIR__ . '/vendor/autoload.php' );
 
@@ -12,7 +14,8 @@ class Cron {
 	 * @return string
 	 */
 	public static function getToken() {
-		$out = Request::getParam( 'token' );
+		$argv = $_SERVER['argv'];
+		$out  = $argv[1] ?? '' ?: '';
 
 		return $out;
 	}
