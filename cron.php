@@ -24,11 +24,11 @@ class Cron {
 	 * @return bool
 	 */
 	public function getAPI() {
-		Discord\API::getAPI( 'guilds' );
-		Discord\API::getAPI( 'members' );
+		Discord\API::getAPI( 'guilds', 60 * 60 );
+		Discord\API::getAPI( 'members', 60 * 60 );
 		Discord\API::getAPI( 'messages' );
-		Discord\API::getAPI( 'widget' );
-		JuniperBot\API::getAPI( 'ranking' );
+		Discord\API::getAPI( 'widget', 60 * 60 );
+		JuniperBot\API::getAPI( 'ranking', 60 * 60 );
 
 		return true;
 	}
