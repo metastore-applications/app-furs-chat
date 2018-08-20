@@ -21,14 +21,14 @@
 	],
 	"support": {
 		"email": "support@metastore.pro",
-		"issues": "https://gitlab.com/metastore/apps/app-furs-chat/issues",
+		"issues": "https://gitlab.com/metastore/applications/app-furs-chat/issues",
 		"forum": "https://webmasters.community",
 		"wiki": "https://webmasters.wiki",
-		"source": "https://gitlab.com/metastore/apps/app-furs-chat"
+		"source": "https://gitlab.com/metastore/applications/app-furs-chat"
 	},
 	"require": {
 		"php": ">=7.2.0",
-		"metastore/app-kernel": "@dev"
+		"metastore/lib-kernel": "@dev"
 	},
 	"autoload": {
 		"psr-4": {
