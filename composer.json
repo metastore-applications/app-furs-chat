@@ -1,7 +1,7 @@
 {
 	"name": "metastore/app-furs-chat",
 	"type": "project",
-	"description": "",
+	"description": "System data for FURS.Chat site.",
 	"license": "GPL-3.0-or-later",
 	"homepage": "https://metastore.pro/",
 	"keywords": [
