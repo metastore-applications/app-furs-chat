@@ -11,6 +11,9 @@ use MetaStore\App\Kernel\Parser;
  */
 class Members {
 
+	/**
+	 * @return string
+	 */
 	public static function getMembers() {
 		$getData   = API::getAPI( 'widget' );
 		$queryData = $getData['members'];
@@ -57,24 +60,27 @@ class Members {
 			}
 		}
 
-		$outUserList = $outUser;
+		$out = $outUser;
 
-		return $outUserList;
+		return $out;
 	}
 
+	/**
+	 * @return int|string
+	 */
 	public static function getMembersCount() {
 		$getData   = API::getAPI( 'members' );
 		$queryData = $getData;
 
 		$getUserCountTotal = count( $queryData );
 
-		if ( $getUserCountTotal > 1000 ) {
-			$outUserCountTotal = '> 1000';
+		if ( $getUserCountTotal > 999 ) {
+			$out = '> 1000';
 		} else {
-			$outUserCountTotal = $getUserCountTotal;
+			$out = $getUserCountTotal;
 		}
 
-		return $outUserCountTotal;
+		return $out;
 	}
 
 }
