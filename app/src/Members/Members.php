@@ -74,7 +74,7 @@ class Members {
 		$getUserCountTotal = count( $queryData );
 
 		if ( $getUserCountTotal > 999 ) {
-			$out = '&gt; 1000';
+			$out = '<i class="fas fa-user"></i><i class="fas fa-chevron-right fa-fw"></i>1000';
 		} else {
 			$out = $getUserCountTotal;
 		}

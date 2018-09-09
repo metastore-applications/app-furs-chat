@@ -8,7 +8,7 @@
 			</p>
 			<p>
 				<span class="tag is-link is-large">
-					<i class="fas fa-user"></i>&nbsp;<?php echo App::getMembersCount(); ?>
+					<?php echo App::getMembersCount(); ?>
 				</span>
 			</p>
 		</div>
