@@ -7,7 +7,9 @@
 				Всего участников
 			</p>
 			<p>
-				<span class="tag is-link is-large"><?php echo App::getMembersCount(); ?></span>
+				<span class="tag is-link is-large">
+					<i class="fas fa-user"></i> <?php echo App::getMembersCount(); ?>
+				</span>
 			</p>
 		</div>
 	</div>

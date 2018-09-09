@@ -9,6 +9,10 @@ use MetaStore\App\{Kernel\Parser, Furs\Discord\API};
  * @package MetaStore\App\Furs\Messages
  */
 class Messages {
+
+	/**
+	 * @return string
+	 */
 	public static function getMassages() {
 		$getData   = API::getAPI( 'messages', 1 * 60 );
 		$queryData = $getData;
@@ -39,10 +43,7 @@ class Messages {
 				$outEveryone = 'userEveryone';
 			}
 
-			/**
-			 * Mentions parser.
-			 * ---------------------------------------------------------------------------------------------------------- */
-
+			# Mentions parser.
 			foreach ( $getMentions as $mention ) {
 				$getMUserID   = Parser::clearData( $mention['id'] );
 				$getMUserName = Parser::clearData( $mention['username'] );
@@ -53,10 +54,7 @@ class Messages {
 
 			}
 
-			/**
-			 * Attachments parser.
-			 * ---------------------------------------------------------------------------------------------------------- */
-
+			# Attachments parser.
 			$outAttachmentURL = '';
 
 			foreach ( $getAttachments as $attachment ) {
@@ -70,26 +68,17 @@ class Messages {
 				}
 			}
 
-			/**
-			 * URL parser.
-			 * ---------------------------------------------------------------------------------------------------------- */
-
+			# URL parser.
 			$getURL     = '#(https?://([\d\w\.-]+\.[\w\.]{2,6})[^\s\]\[\<\>]*/?)#i';
 			$setURL     = '<a href="${1}" rel="nofollow" target="_blank">${2}</a>';
 			$getContent = preg_replace( $getURL, $setURL, $getContent );
 
-			/**
-			 * Emojis parser.
-			 * ---------------------------------------------------------------------------------------------------------- */
-
+			# Emojis parser.
 			$getEmoji   = '#\<:(.+):(\d+)\>#i';
 			$setEmoji   = '<img class="userEmoji" src="https://cdn.discordapp.com/emojis/${2}.png" alt="${1}" />';
 			$getContent = preg_replace( Parser::clearData( $getEmoji ), $setEmoji, $getContent );
 
-			/**
-			 * Out content.
-			 * ---------------------------------------------------------------------------------------------------------- */
-
+			# Out content.
 			$outContent = $getContent;
 
 			if ( $getAuthorName != 'BOT.Hello' ) {
@@ -97,8 +86,8 @@ class Messages {
 			}
 		}
 
-		$outMessageList = $outMessage;
+		$out = $outMessage;
 
-		return $outMessageList;
+		return $out;
 	}
 }

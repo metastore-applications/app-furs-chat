@@ -74,7 +74,7 @@ class Members {
 		$getUserCountTotal = count( $queryData );
 
 		if ( $getUserCountTotal > 999 ) {
-			$out = '> 1000';
+			$out = '&gt; 1000';
 		} else {
 			$out = $getUserCountTotal;
 		}
