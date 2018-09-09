@@ -2,8 +2,6 @@
 
 namespace MetaStore\App\Furs\JuniperBot;
 
-use MetaStore\App\Kernel\Parser;
-
 /**
  * Class Members
  * @package MetaStore\App\Furs\Members

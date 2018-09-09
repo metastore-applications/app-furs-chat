@@ -2,8 +2,7 @@
 
 namespace MetaStore\App\Furs\Members;
 
-use MetaStore\App\Furs\Discord\API;
-use MetaStore\App\Kernel\Translit;
+use MetaStore\App\{Kernel\Translit, Furs\Discord\API};
 
 /**
  * Class Roles

@@ -2,8 +2,7 @@
 
 namespace MetaStore\App\Furs\Messages;
 
-use MetaStore\App\Furs\Discord\API;
-use MetaStore\App\Kernel\Parser;
+use MetaStore\App\{Kernel\Parser, Furs\Discord\API};
 
 /**
  * Class Messages

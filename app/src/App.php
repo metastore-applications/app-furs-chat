@@ -4,8 +4,7 @@ namespace MetaStore\App\Furs;
 
 use MetaStore\App\Kernel\View;
 use MetaStore\App\Furs\Members\{Members, Roles};
-use MetaStore\App\Furs\Messages\Messages;
-use MetaStore\App\Furs\JuniperBot\Cards;
+use MetaStore\App\Furs\{Messages\Messages, JuniperBot\Cards};
 
 /**
  * Class App
