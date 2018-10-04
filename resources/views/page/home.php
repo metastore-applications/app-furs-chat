@@ -9,9 +9,9 @@
 		<section id="section-main" class="hero is-fullheight">
 			<div class="hero-body">
 				<div class="container box">
-					<h1 class="title">
+					<h2 class="title">
 						Главная
-					</h1>
+					</h2>
 					<div class="columns">
 						<!-- block -->
 						<div class="column">
@@ -43,9 +43,9 @@
 		<section id="section-info" class="hero is-fullheight">
 			<div class="hero-body">
 				<div class="container box">
-					<h1 class="title">
+					<h2 class="title">
 						Информация
-					</h1>
+					</h2>
 					<div class="columns">
 						<!-- block -->
 						<div class="column">
@@ -245,9 +245,9 @@
 		<section id="section-connect" class="hero is-fullheight">
 			<div class="hero-body">
 				<div class="container box">
-					<h1 class="title">
+					<h2 class="title">
 						Подключение
-					</h1>
+					</h2>
 					<div class="columns">
 						<!-- block -->
 						<div class="column">
@@ -360,9 +360,9 @@
 		<section id="section-stats" class="hero is-fullheight">
 			<div class="hero-body">
 				<div class="container box">
-					<h1 class="title">
+					<h2 class="title">
 						Статистика
-					</h1>
+					</h2>
 					<div class="columns">
 						<!-- block -->
 						<div class="column">
@@ -441,9 +441,9 @@
 		<section id="section-ranking" class="hero is-fullheight">
 			<div class="hero-body">
 				<div class="container box">
-					<h1 class="title">
+					<h2 class="title">
 						Рейтинг участников (TOP-50)
-					</h1>
+					</h2>
 					<div class="columns">
 						<!-- block -->
 						<div class="column">

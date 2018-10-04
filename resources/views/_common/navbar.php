@@ -1,7 +1,9 @@
 <!-- navigation -->
 <nav class="navbar has-shadow is-fixed-top is-transparent" itemscope itemtype="http://schema.org/SiteNavigationElement">
 	<div class="navbar-brand">
-		<a class="navbar-item" href="/">Чат FURRY / ФУРРИ</a>
+		<h1 class="navbar-item">
+			Чат FURRY / ФУРРИ
+		</h1>
 		<a class="button navbar-burger" data-target="navMenu">
 			<span></span>
 			<span></span>
