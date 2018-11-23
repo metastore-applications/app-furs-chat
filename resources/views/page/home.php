@@ -286,13 +286,13 @@
 								</p>
 								<div class="field has-addons">
 									<div class="control">
-										<input id="chatUrl" class="input" type="text" value="https://discord.gg/YPJvhZy" readonly="readonly" />
+										<input id="chatUrl" class="input" type="text" value="https://discord.gg/ShMTyRr" readonly="readonly" />
 									</div>
 									<div class="control">
 										<button class="button is-info setClipboard" data-clipboard-target="#chatUrl" title="Скопировать ссылку в буфер обмена">
-										<span class="icon is-small">
-											<span class="fas fa-clipboard fa-fw"></span>
-										</span>
+											<span class="icon is-small">
+												<span class="fas fa-clipboard fa-fw"></span>
+											</span>
 										</button>
 									</div>
 								</div>
